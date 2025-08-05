@@ -30,8 +30,7 @@ services:
       SERVICE1_TOR_SERVICE_HOSTS: "80:nginx:80"
       SERVICE1_TOR_SERVICE_VERSION: '3'
       SERVICE1_TOR_SERVICE_KEY: |
-        PT0gZWQyNTUxOXYxLXNlY3JldDogdHlwZTAgPT0AAACArobDQYyZAWXei4QZwr++
-        j96H1X/gq14NwLRZ2O5DXuL0EzYKkdhZSILY85q+kfwZH8z4ceqe7u1F+0pQi/sM
-    #volumes:
-    #  - ./hidden_service:/var/lib/tor/hidden_service
+        PT0gZWQyNTUxOXYxLXNlY3JldDogdHlwZTAgPT0AAAAo16QfN6dliJbXpt6dkjJ9AbRQFNAPcsYN1fL564MnWUmd76/CE5hWmiW88r1v1E/tBDR2uQot7HuquCdNsGu9
+    volumes:
+      - ./hidden_service:/var/lib/tor/hidden_service
     restart: unless-stopped
